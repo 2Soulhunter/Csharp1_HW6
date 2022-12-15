@@ -22,7 +22,7 @@ void PrintArray(int[,] matr)
     {
         for (int j = 0; j < matr.GetLength(1); j++)
         {
-           Console.Write(matr[i, j] + "\t");
+           Console.Write($"{matr[i, j],6}\t");   // \t - табуляция, ,6 - кол-во символов (для выравнивания по правому краю) 
         }
         Console.Write(Environment.NewLine + Environment.NewLine);
     }
